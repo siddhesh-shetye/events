@@ -1,5 +1,7 @@
-import events from './events';
+import event from './event';
+import eventCategory from './event-category';
 
 export default {
-    'events': { schema: events },
+    'event': { schema: event },
+    'event-category': { schema: eventCategory }
 };

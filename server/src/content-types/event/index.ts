@@ -1,10 +1,10 @@
 export default {
     "kind": "collectionType",
-    "collectionName": "insights",
+    "collectionName": "events",
     "info": {
-        "singularName": "insight",
-        "pluralName": "insights",
-        "displayName": "Insights",
+        "singularName": "event",
+        "pluralName": "events",
+        "displayName": "Events",
         "description": ""
     },
     "options": {
@@ -33,10 +33,6 @@ export default {
         "end_at": {
             "type": "datetime"
         },
-        "enable_review": {
-            "type": "boolean",
-            "default": false
-        },
         "thumbnail": {
             "type": "media",
             "multiple": false,
@@ -53,9 +49,34 @@ export default {
                 "images"
             ]
         },
+        "featured": {
+            "type": "boolean",
+            "default": false
+        },
+        "enable_review": {
+            "type": "boolean",
+            "default": false
+        },
         "enable_registration": {
             "type": "boolean",
             "default": false
-        }
+        },
+        "button": {
+            "type": "component",
+            "repeatable": false,
+            "component": "events.button"
+        },
+        "location": {
+            "type": "string"
+        },
+        "latitude": {
+            "type": "string"
+        },
+        "longitude": {
+            "type": "string"
+        },
+        "capacity": {
+            "type": "integer"
+        },
     }
 };
