@@ -1,9 +1,7 @@
 {
-    "collectionName": "components_services_buttons",
+    "collectionName": "components_buttons_buttons",
     "info": {
-        "displayName": "Button",
-        "icon": "cursor",
-        "description": ""
+        "displayName": "Button"
     },
     "options": {},
     "attributes": {
@@ -12,8 +10,8 @@
             "default": "Register for event",
             "required": true
         },
-        "link": {
-            "type": "text"
+        "external_link": {
+            "type": "string"
         },
         "type": {
             "type": "enumeration",
@@ -22,5 +20,6 @@
                 "external"
             ]
         }
-    }
+    },
+    "config": {}
 }

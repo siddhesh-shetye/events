@@ -53,18 +53,9 @@ export default {
             "type": "boolean",
             "default": false
         },
-        "enable_review": {
-            "type": "boolean",
-            "default": false
-        },
         "enable_registration": {
             "type": "boolean",
             "default": false
-        },
-        "button": {
-            "type": "component",
-            "repeatable": false,
-            "component": "events.button"
         },
         "location": {
             "type": "string"
@@ -78,5 +69,15 @@ export default {
         "capacity": {
             "type": "integer"
         },
+        "button": {
+            "type": "component",
+            "component": "buttons.button",
+            "repeatable": false
+        },
+        "event_categories": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::event-category.event-category"
+        }
     }
 };
